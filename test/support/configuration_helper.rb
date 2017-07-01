@@ -15,7 +15,6 @@ module RouteTranslator
       config_default_locale_settings      :en
       config_host_locales                 {}
       config_locale_segment_proc          false
-      config_verify_host_path_consistency false
 
       BOOLEAN_OPTIONS.each do |option, default_value|
         send(:"config_#{option}", default_value)
